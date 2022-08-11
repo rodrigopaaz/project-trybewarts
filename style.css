@@ -1,7 +1,11 @@
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
+    opacity: 0.8;
     justify-content:flex-end;
+    height: 40px;
+    align-items: center;
+
 }
 
 .trybewarts-login {

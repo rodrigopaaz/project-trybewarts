@@ -8,4 +8,12 @@ buttonLogin.addEventListener('click', function(){
     }
     else {alert('Olá, Tryber!')}
 })
+let checkbox = document.getElementById("agreement")
+checkbox.addEventListener("click", function(e){
+    if (checkbox.checked){
+        document.getElementById("submit-btn").removeAttribute("disabled")
+    }
+    else {document.getElementById("submit-btn").setAttribute("disabled", true)
+    }
+})
 

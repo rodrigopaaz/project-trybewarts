@@ -20,6 +20,7 @@
 main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #evaluation-form {
@@ -28,11 +29,13 @@ main {
   flex-flow: column wrap;
   height: 50px;
   justify-content: space-evenly;
+  flex-basis: 50%;
 }
 
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
+  flex-basis: 50%;
 }
 
 #input-name {
@@ -52,3 +55,10 @@ main {
 #input-email {
   width: 400px;
 }
+
+#evaluation-form div {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+

@@ -71,6 +71,7 @@
         <input type="radio" name="rate" value="8" />8
         <input type="radio" name="rate" value="9" />9
         <input type="radio" name="rate" value="10" />10
+        <h3 id="counter"></h3>
       </form>
       <label for="" class="textarea">Deixe seu comentário:</label>
       <form action="">
@@ -80,10 +81,12 @@
           maxlength="500"
           cols="70"
           rows="7"
-        ></textarea>
+          id="textarea"
+        ></textarea> 
       </form>
-    </main>
-    <div id="agreement">
+      
+      </main>
+      <div id="agreement">
       <input type="checkbox" name="agreement" id="agreement" />
       <label for="" class="text" id="label-infos"
         >Você concorda com o uso das informações acima?</label
@@ -91,7 +94,7 @@
     </div>
     <button type="submit" id="submit-btn" disabled>Enviar</button>
     <footer>Direitos reservados à Trybewarts©</footer>
-
+   
     <script src="script.js"></script>
   </body>
 </html>

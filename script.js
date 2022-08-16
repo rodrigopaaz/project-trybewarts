@@ -3,6 +3,9 @@ const inputPassword = document.getElementsByTagName('input')[1];
 const buttonLogin = document.getElementsByTagName('button')[0];
 const buttonAgreement = document.getElementById('submit-btn');
 const agree = document.getElementById('agreement');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+counter.innerHTML = textArea.maxLength;
 
 buttonLogin.addEventListener('click', () => {
   if (inputName.value !== 'tryber@teste.com' && inputPassword !== '123456') {
@@ -14,4 +17,9 @@ buttonLogin.addEventListener('click', () => {
 
 agree.addEventListener('click', () => {
   buttonAgreement.disabled = false;
+});
+
+textArea.addEventListener('keyup', () => {
+  const contador = textArea.value.length;
+  counter.innerHTML = textArea.maxLength - contador;
 });

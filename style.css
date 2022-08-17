@@ -27,7 +27,6 @@ main {
   display: flex;
   width: 675px;
   flex-flow: column wrap;
-  height: 50px;
   justify-content: space-evenly;
   flex-basis: 50%;
 }
@@ -62,3 +61,13 @@ main {
   flex-direction: column;
 }
 
+#names {
+  display: flex;
+  height: 50px;
+  background-color: blue;
+  flex-wrap: wrap;
+}
+
+#header-logo {
+  width: 30px;
+}
